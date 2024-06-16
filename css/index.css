@@ -56,9 +56,7 @@ body {
   color: rgb(255, 255, 255);
 }
 
-.res-navbar img {
-  display: none;
-}
+
 
 /* Showcase styling */
 .showcase {
@@ -110,9 +108,8 @@ body {
 
 
 /* main sectiion styling */
-
 #image-gallery {
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -153,9 +150,10 @@ body {
 footer p {
   background-color: rgba(0, 0, 0);
   color: white;
-  align-items: center;
-  max-width: 100%;
+  text-align: center;
+  min-width: 100%;
   padding: 20px;
+  font-size: 1.5rem;
 }
 
 
@@ -203,6 +201,7 @@ footer p {
   .navbar {
     display: none;
   }
+
   
   
   
@@ -256,7 +255,6 @@ footer p {
 
   
 #image-gallery {
-  height: 100vh;
   position: relative;
 }
 
@@ -268,7 +266,7 @@ footer p {
   border-top: 5px solid rgba(255, 0, 0, 0.7);
   border-bottom: 5px solid rgba(255, 0, 0, 0.7);
   margin: 0 auto;
-  margin-top: -30px;
+  margin-top: -50px;
   position: relative;
   top: 0;
 }
@@ -297,9 +295,10 @@ footer p {
 footer p {
   background-color: rgba(0, 0, 0);
   color: white;
-  align-items: center;
-  max-width: 100%;
+  text-align: center;
+  min-width: 100%;
   padding: 20px;
+  font-size: 1.2rem;
 }
 
 
