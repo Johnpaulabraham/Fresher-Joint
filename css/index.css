@@ -77,7 +77,7 @@ body {
 }
 
 .res-navbar img {
-  display: none;
+  /* display: none; */
 }
 
 /* RESPONSIVE STYLING */
@@ -110,7 +110,7 @@ body {
   .navbar h1 {
     font-family: "Just Another Hand";
     font-size: 35px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
   }
 
   .navbar ul {
