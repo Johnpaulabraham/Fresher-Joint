@@ -78,7 +78,29 @@ body {
 
 .res-navbar img {
   /* display: none; */
+  margin-left: 20px;
+  text-align: center;
 }
+
+#header .brand-text {
+  font-family: "Lilita One";
+  font-size: 60px;
+  text-align: center;
+  font-weight: 100;
+}
+
+#header button {
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  padding: 10px 25px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+
 
 /* RESPONSIVE STYLING */
 
@@ -133,4 +155,21 @@ body {
     width: 50px;
   }
 
+  #header .brand-text {
+    font-family: "Lilita One";
+    font-size: 40px;
+    text-align: center;
+    font-weight: 100;
+    margin-top: 80px;
+  }
+
+  #header button {
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    padding: 10px 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0 auto;
+  }
 }
