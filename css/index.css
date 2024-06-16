@@ -19,35 +19,16 @@ body {
   margin: 0 auto;
 }
 
+/* Header styling */
 #header {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.58),
-      rgba(0, 0, 0, 0.58)
-    ),
-    url(../images/background.jpg);
-  background-size: cover;
-  background-position: center;
-  scroll-behavior: smooth;
-  /* max-width: 1366px; */
-  min-height: 80vh;
-  border-bottom: 5px solid rgba(255, 0, 0, 0.7);
-}
-
-.navbar {
-  background-color: rgba(0, 0, 0, 0.884);
-  /* height: 80px; */
+  background-color: rgba(0, 0, 0);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* gap: 50px; */
-  padding-top: 10px;
-}
+  max-width: 100%;
+  min-height: 10vh;
+  padding: 0 20px;
 
-.navbar h1 {
-  font-family: "Just Another Hand";
-  font-size: 40px;
-  margin-left: 20px;
 }
 
 .span-1 {
@@ -62,7 +43,6 @@ body {
 .navbar ul {
   list-style-type: none;
   text-decoration: none;
-  color: rgb(255, 255, 255);
   margin-right: 20px;
   display: flex;
 }
@@ -78,34 +58,103 @@ body {
 
 .res-navbar img {
   /* display: none; */
-  margin-left: 20px;
-  text-align: center;
 }
 
-#header .brand-text {
+/* Showcase styling */
+.showcase {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.58),
+      rgba(0, 0, 0, 0.58)
+    ),
+    url(../images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  min-height: 80vh;
+  border-bottom: 5px solid rgba(255, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+
+.showcase h1 {
   font-family: "Lilita One";
+  line-height: 0.9;
+  /* font-size: 5rem; */
+  letter-spacing: 0.08em;
   font-size: 60px;
   text-align: center;
   font-weight: 100;
 }
 
-#header button {
+
+.showcase button {
   background-color: black;
   color: white;
   font-size: 30px;
+  font-weight: 800;
+  line-height: 1.5;
+  margin: 25px 0;
   padding: 10px 25px;
   border: 1px solid black;
   border-radius: 5px;
   cursor: pointer;
-
 }
+
+.showcase button:hover {
+  background-color: rgba(255, 0, 0, 0.7);
+  border: none;
+}
+
 
 
 
 /* RESPONSIVE STYLING */
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+
+  body {
+    font-family: "Truculenta", "Lilita One", "Shadows Into Light",
+      "Just Another Hand";
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+  }
+  
+
   #header {
+    background-color: rgba(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    min-height: 10vh;
+    padding: 0 20px;
+  
+  }
+  #header h1 {
+    font-size: 1.8rem;
+  }
+  .span-1 {
+    background-color: rgba(255, 0, 0, 0.7);
+    padding: 1px 15px 1px 15px;
+  }
+  
+  .span-2 {
+    color: rgba(255, 0, 0, 0.7);
+  }
+  
+  .navbar {
+    display: none;
+  }
+  
+  
+  /* Showcase styling */
+  .showcase {
     background-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.58),
@@ -114,62 +163,41 @@ body {
       url(../images/background.jpg);
     background-size: cover;
     background-position: center;
-    scroll-behavior: smooth;
-    width: 100%;
+    max-width: 100%;
     min-height: 80vh;
     border-bottom: 5px solid rgba(255, 0, 0, 0.7);
-  }
-
-  .navbar {
-    background-color: rgba(0, 0, 0, 0.884);
-    min-height: 15vh;
     display: flex;
-    justify-content: space-between;
-    /* flex-direction: column; */
-    padding: 10px 0 10px 0;
-  }
-
-  .navbar h1 {
-    font-family: "Just Another Hand";
-    font-size: 35px;
-    /* margin-left: 20px; */
-  }
-
-  .span-1 {
-    background-color: rgba(255, 0, 0, 0.7);
-    padding: 10px 15px 5px 15px;
-    border-radius: 5px;
-    text-align: center;
-  }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } 
   
-  .span-2 {
-    color: rgba(255, 0, 0, 0.7);
-  }
-
-  .navbar ul {
-    display: none;
-    margin: 0 auto;
-  }
-
-  .res-navbar img {
-    width: 50px;
-  }
-
-  #header .brand-text {
+  .showcase h1 {
     font-family: "Lilita One";
-    font-size: 40px;
+    line-height: 0.9;
+    /* font-size: 5rem; */
+    letter-spacing: 0.08em;
+    font-size: 60px;
     text-align: center;
     font-weight: 100;
-    margin-top: 80px;
   }
-
-  #header button {
+  
+  
+  .showcase button {
     background-color: black;
     color: white;
     font-size: 30px;
+    font-weight: 800;
+    line-height: 1.5;
+    margin: 25px 0;
     padding: 10px 25px;
     border: 1px solid black;
     border-radius: 5px;
-    margin: 0 auto;
+    cursor: pointer;
+  }
+  
+  .showcase button:hover {
+    background-color: rgba(255, 0, 0, 0.7);
+    border: none;
   }
 }
